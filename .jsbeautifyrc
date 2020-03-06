@@ -1,0 +1,14 @@
+{
+  "editorconfig": false,
+  "html": {
+    "brace_style": "collapse",
+    "indent_char": " ",
+    "indent_scripts": "normal",
+    "indent_size": 2,
+    "wrap_line_length": 120,
+    "wrap_attributes": "force-expand-multiline",
+    "unformatted": ["sub", "sup", "b", "i", "u", "em", "strong"],
+    "preserve_newlines": true,
+    "end_with_newline": true
+  }
+}
