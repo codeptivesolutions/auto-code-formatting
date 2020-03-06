@@ -1,39 +1,40 @@
 # AutoCodeFormatting
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+###### Overview
 
-This project basically demonstrate that how we can do auto code formatting with prettier and js-beautify using lint-staged & husky which will allow us to run our script for auto code formatting on git pre-commit hook
+This project basically demonstrates that how we can do **auto code formatting with prettier and js-beautify using lint-staged & husky** which will allow us to do auto code formatting on git pre-commit hook.
 
-We will use prettier to do code formatting for all file types like typescript(ts), javascript(js), css, scss, less, json, JSX, GraphQL, YAML etc except html file because it is in trial phase at the time of this project creation
+###### Use of prettier, js-beautify, lint-staged and husky
 
-We will use js-beautify to do code formatting for html file types
+We will use **prettier** to do code formatting for all file types like typescript(ts), javascript(js), css, scss, less, json, JSX, GraphQL, YAML etc **_except html file because it is in trial phase at the time of this project creation_**
 
-we will use lint-staged to do code formatting only against staged git files and don't let 💩 slip into your entire code base!
+We will use **js-beautify** to do code formatting for html file types
 
-we will use husky to run our auto code formatting things on git pre-commit hook so that on each commit we make sure all commited code will be formatted with our defined formatting rules no matter developers installed this formatting plugins(prettier, js-beautify) on their machine or not!
+we will use **lint-staged** to do code formatting **only against staged git files and don't let 💩 slip into your entire code base!**
 
-So PR(Pull Request) reviewers can get rid of pain of unnecessary white spaces while reviewing developers code and our pre-define global code formatting rule always follow in our remote central repository.
+we will use **husky** to run our auto code formatting things on git pre-commit hook so that on each commit we make sure all commited code will be formatted with our defined formatting rules **no matter developers installed this formatting plugins(prettier, js-beautify) on their machine or not!**
 
-## Development server
+###### Advantages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **So PR(Pull Request) reviewers can get rid of pain of unnecessary white spaces while reviewing developers code.**
+- **Our pre-define global code formatting rules will always follow in our remote central repository. so no matter developers installed this formatting plugins(prettier, js-beautify) on their machine or not!**
+- **Save your development time without worrying code formatting**
 
-## Code scaffolding
+## Scripts details of package.json
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **start** : Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- **format:prettier** : Run `npm run format:prettier` to format all typescript(ts), javascript(js), css, scss, less, json, JSX, GraphQL, YAML file types of code located under `src` folder.
+- **format:html** : Run `npm run format:html` to format all html file types of code located under `src` folder.
+- **format** : Run `npm run format` to format all file types of code located under `src` folder which is basically combination of above 2 script(npm run format:prettier && npm run format:html).
+
+## Config files list for code formtting
+
+- `.prettierrc` : This file contains rules for how we want to format our code for typescript(ts), javascript(js), css, scss, less, json, JSX, GraphQL, YAML file types.
+- `.prettierignore` : This file defines which files we want to ignore for code formatting.
+- `.jsbeautifyrc` : This file contains rules for how we want to format our code for html file types.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## That's it!! :relaxed: Now do your code without worrying of code formatting :relaxed:
