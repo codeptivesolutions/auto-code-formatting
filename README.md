@@ -1,8 +1,8 @@
 # AutoCodeFormatting
 
-###### Overview
+## Overview
 
-This project basically demonstrates that how we can do **auto code formatting with prettier and js-beautify using lint-staged & husky** which will allow us to do auto code formatting on git pre-commit hook.
+This project basically demonstrates that how we can do **auto code formatting with prettier and js-beautify with our custom formatting configuration options using lint-staged & husky** which will allow us to do auto code formatting on git pre-commit hook.
 
 ###### Use of prettier, js-beautify, lint-staged and husky
 

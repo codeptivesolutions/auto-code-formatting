@@ -1,0 +1,28 @@
+.auto-code-formatting {
+  padding: 0 20px;
+  font-size: 18px;
+
+  &__heading {
+    color: darkblue;
+    font-size: 42px;
+  }
+
+  &__main {
+    color: darkcyan;
+
+    label {
+      color: darkblue;
+      font-size: 28px;
+    }
+
+    > div {
+      padding: 20px 0;
+    }
+  }
+
+  &__footer {
+    color: darkgreen;
+    padding: 20px 0;
+    font-size: 28px;
+  }
+}
